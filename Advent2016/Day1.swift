@@ -1,3 +1,10 @@
 #!/usr/bin/swift
 
-print("Hello World")
+import Foundation
+
+let dateFormatter = DateFormatter()
+dateFormatter.dateStyle = .medium
+dateFormatter.timeStyle = .medium
+let formattedDate = dateFormatter.string(from: Date())
+
+print("Hello \(formattedDate) !!!")
